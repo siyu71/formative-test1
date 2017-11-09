@@ -1,0 +1,23 @@
+---
+title: "Formative Test 1 - Q-Matrix"
+author: "Charles Lang"
+date: "11/9/2017"
+output: html_document
+---
+In the following excercise you will be creating a Q-Matrix for the formative test and then calculating the error for your Q-matrix by comparing it the real class data.
+
+1. Start by building your own Q-Matrix from the questions on the formative test. You need to define a set of concepts and then decide which concepts are required for each question. Create a matrix in R that displays your Q-Matrix.
+
+2. Define all possible concept states for your Q-Matrix. A concept state is the possible combinations of concepts represented by 1 and 0. For example, if there are two concepts the possible concept states would be `00`, `01`, `10` and `11`.
+
+3. Generate the Ideal Response Vectors for each concept state. The Ideal Response Vector would be the pattern of answers you would expect a student to give for each concept state. Can you do this in code (not manually)? Store these as individual vectors.
+
+4. Now upload the class answer data and convert it to 1s and 0s. Each row of the class data is a response vector. How many unique response vectors are there in the class data? How many Ideal Response Vectors did you generate in the previous step?
+
+5. Compare each response vector to the Ideal Response Vectors using Hamming Distance (the number of differing elements in each vector). You will need to install the `e1071` package and use the code `hamming.distance()`. 
+
+6. Match each response vector to the Ideal Response Vector for which there is the lowest Hamming Distance.
+
+7. For each response vector multiply this lowest Hamming Distance by the number of students that answered with that response vector and sum all these values together. This is the error score for your Q-Matrix.
+
+8. What change could you make to your Q-Matrix to attempt to lower its error score?
