@@ -1,0 +1,24 @@
+---
+title: "Formative Test Visualization"
+author: "HUDK4050"
+date: "11/9/2017"
+output: html_document
+---
+
+
+```{r, echo=FALSE}
+#Input your data processing steps here
+
+#Name your first data frame "D1" 
+
+D1 <- 
+
+```
+
+## Example Visualization Name
+```{r, echo=FALSE}
+#Create a new code block, give it an appropriate title and input your visualization code.
+
+
+```
+
